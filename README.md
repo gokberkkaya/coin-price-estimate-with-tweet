@@ -26,3 +26,16 @@ This Flask API predicts the potential price change of a tweet based on its conte
         "estimate": false  # Indicates that the tweet may not affect the price or could decrease it
     }
     ```
+<br>
+
+#### Install Requirements
+
+```
+pip install -r requirements.txt
+```
+
+#### Run App
+
+```
+python run.py
+```
