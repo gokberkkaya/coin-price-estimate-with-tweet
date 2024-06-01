@@ -1,0 +1,23 @@
+# Sanal ortam dosyaları
+venv/
+env/
+
+# Yüklü paketler
+*.pyc
+__pycache__/
+*.pyo
+*.pyc
+site-packages/
+
+# Geçici veya log dosyaları
+*.log
+*.pot
+*.mo
+instance/
+
+# Gizli dosyalar
+.DS_Store
+Thumbs.db
+
+# Local konfigürasyonlar veya gizli bilgiler içeren dosyalar
+.env
