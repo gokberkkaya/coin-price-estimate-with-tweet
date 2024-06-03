@@ -1,29 +1,33 @@
-# coin-price-estimate-with-tweet
+# Coin Price Estimate With Tweet
 
 This Flask API predicts the potential price change of a tweet based on its content and owner.
 
-## Usage
+------
 
 ### API Endpoints
 
 - **POST /api/get-tweet-estimate**: Used to estimate the impact of a tweet.
-  - Request Body:
+  - ###### Request Body:
     ```json
     {
         "tweet": "Tweet content",
         "tweet_owner": "Tweet owner"
     }
     ```
-  - Response:
+  - ###### Response:
+    ######
+    Indicates that the tweet is likely to increase the price
     ```json
     {
-        "estimate": true  # Indicates that the tweet is likely to increase the price
+        "estimate": true
     }
     ```
     or
+    ######
+    Indicates that the tweet may not affect the price or could decrease it
     ```json
     {
-        "estimate": false  # Indicates that the tweet may not affect the price or could decrease it
+        "estimate": false
     }
     ```
 <br>
@@ -37,5 +41,5 @@ pip install -r requirements.txt
 #### Run App
 
 ```
-python run.py
+python api.py
 ```

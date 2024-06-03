@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from app.model import predict_tweet_effect
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 def validate_request(data):
     if 'tweet' not in data or 'tweet_owner' not in data:
